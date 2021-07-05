@@ -1,0 +1,9 @@
+.tabButton {
+    color: #5e6e8f;
+    border: none;
+    background: none;
+}
+
+button:focus {
+    outline: none;
+}
