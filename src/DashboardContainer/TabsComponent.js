@@ -57,7 +57,7 @@ function TabsComponent(props) {
 
                         </td>
                         <td style={{ width: "24%" }}>
-                            <img alt='game_url' className="mr-3" src={'../assets/' + item['image_url']}
+                            <img alt='game_url' className="mr-3" src={item['image_url']}
                                 style={{ width: "3em", height: "3em", float: "left" }} />
                             <div><p className="my-0"><b> {item['name']} </b></p>
                                 <sub> {item['region']} </sub> </div>
@@ -71,7 +71,7 @@ function TabsComponent(props) {
                             <p className="ml-1 mx-0 my-0"> CSV</p>
                             <img alt='report' className="ml-5" src={stats}
                                 style={{ width: "2.2em", height: "2.2em", float: "left" }} />
-                            <p className="ml-2 mx-0 my-0">{t('report')}</p>
+                            <p className="ml-2 mx-0 my-0">{t('l')}</p>
                             {renderCalender()}
                         </ButtonGroup>
 

@@ -28,7 +28,7 @@ function Price(props) {
             {open && <Popup isOpen={open} closeModal={() => setOpen(false)}>
                 <img className="ml-5"
                     style={{ width: "6em", height: "6em", float: "left" }}
-                    src={require('../assets/' + props.item.image_url)} alt="popupImage" />
+                    src={'../assets/' + props.item.image_url} alt="popupImage" />
                 <div ><p className="mr-5 text-center">{props.item.name}<br />
                     <sub>{props.item.region}</sub> </p></div>               
                  <div className="text-center">
