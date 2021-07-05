@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/bluestack-frontend/static/css/main.21015808.chunk.css",
-    "main.js": "/bluestack-frontend/static/js/main.db0b0131.chunk.js",
-    "main.js.map": "/bluestack-frontend/static/js/main.db0b0131.chunk.js.map",
-    "runtime-main.js": "/bluestack-frontend/static/js/runtime-main.98ed4171.js",
-    "runtime-main.js.map": "/bluestack-frontend/static/js/runtime-main.98ed4171.js.map",
-    "static/js/2.27a29759.chunk.js": "/bluestack-frontend/static/js/2.27a29759.chunk.js",
-    "static/js/2.27a29759.chunk.js.map": "/bluestack-frontend/static/js/2.27a29759.chunk.js.map",
-    "static/js/3.ea015734.chunk.js": "/bluestack-frontend/static/js/3.ea015734.chunk.js",
-    "static/js/3.ea015734.chunk.js.map": "/bluestack-frontend/static/js/3.ea015734.chunk.js.map",
+    "main.js": "/bluestack-frontend/static/js/main.c506cfb0.chunk.js",
+    "main.js.map": "/bluestack-frontend/static/js/main.c506cfb0.chunk.js.map",
+    "runtime-main.js": "/bluestack-frontend/static/js/runtime-main.31343f4f.js",
+    "runtime-main.js.map": "/bluestack-frontend/static/js/runtime-main.31343f4f.js.map",
+    "static/js/2.abed59af.chunk.js": "/bluestack-frontend/static/js/2.abed59af.chunk.js",
+    "static/js/2.abed59af.chunk.js.map": "/bluestack-frontend/static/js/2.abed59af.chunk.js.map",
+    "static/js/3.56381e71.chunk.js": "/bluestack-frontend/static/js/3.56381e71.chunk.js",
+    "static/js/3.56381e71.chunk.js.map": "/bluestack-frontend/static/js/3.56381e71.chunk.js.map",
     "index.html": "/bluestack-frontend/index.html",
     "static/css/main.21015808.chunk.css.map": "/bluestack-frontend/static/css/main.21015808.chunk.css.map",
-    "static/js/2.27a29759.chunk.js.LICENSE.txt": "/bluestack-frontend/static/js/2.27a29759.chunk.js.LICENSE.txt",
+    "static/js/2.abed59af.chunk.js.LICENSE.txt": "/bluestack-frontend/static/js/2.abed59af.chunk.js.LICENSE.txt",
     "static/media/getFetch.cjs": "/bluestack-frontend/static/media/getFetch.582d29c4.cjs",
     "static/media/logo.6ce24c58.svg": "/bluestack-frontend/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.98ed4171.js",
-    "static/js/2.27a29759.chunk.js",
+    "static/js/runtime-main.31343f4f.js",
+    "static/js/2.abed59af.chunk.js",
     "static/css/main.21015808.chunk.css",
-    "static/js/main.db0b0131.chunk.js"
+    "static/js/main.c506cfb0.chunk.js"
   ]
 }
