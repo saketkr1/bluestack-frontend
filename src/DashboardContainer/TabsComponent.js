@@ -1,37 +1,22 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
 import { Table, ButtonGroup } from 'react-bootstrap';
-import Price from './Price';
 
+import Price from './Price';
+import Schedule from './Schedule';
 import file from '../assets/file.png';
 import stats from '../assets/statistics-report.png';
-import cal from '../assets/calendar.png';
 
 let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
     'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-
 function TabsComponent(props) {
-    console.log(props, 'tab');
-    const { t } = useTranslation();
 
+    const { t } = useTranslation();
     const getDate = date => {
         return ' ' + new Date(date).getFullYear() + ', ' + new Date(parseInt(date)).getDate();
     }
 
-    const renderCalender = () => {
-        return (
-            <div>
-                <img alt='calendar' className="ml-5" src={cal}
-                    style={{ width: "2.5em", height: "2.5em", float: "left" }} />
-                <button variant="light" style={{
-                    background: "white", color: "#57698a",
-                    textDecoration: "none", border: "0.4em solid white", marginTop: "5px", fontSize: "0.9em"
-                }}
-                ><p className="ml-0 mx-0 my-0"> {t('scheduleAgain')}</p>
-                </button>
-            </div>)
-    }
     const d = new Date();
     return (
         <div>
@@ -45,7 +30,7 @@ function TabsComponent(props) {
                     </tr>
                 </thead>
                 <tbody>
-                    {props.data.map(item => (<tr>
+                    {props.data.map((item, index ) => (<tr key={index}>
                         <td style={{ fontSize: "0.95em" }} >
 
                             {t(months[new Date(parseInt(item['createdOn'])).getMonth()])}
@@ -68,13 +53,12 @@ function TabsComponent(props) {
                         <td style={{ width: "46%" }} > <ButtonGroup style={{ display: "flex" }}>
                             <img alt='csv' className="mr-3" src={file}
                                 style={{ width: "2.2em", height: "2.2em", float: "left" }} />
-                            <p className="ml-1 mx-0 my-0"> CSV</p>
+                            <p className="ml-6 mx-0 my-0"> CSV</p>
                             <img alt='report' className="ml-5" src={stats}
                                 style={{ width: "2.2em", height: "2.2em", float: "left" }} />
                             <p className="ml-2 mx-0 my-0">{t('l')}</p>
-                            {renderCalender()}
+                            <Schedule item={{ name: item['name'], time: item['createdOn'] }} updateData={props.updateData} />
                         </ButtonGroup>
-
                         </td>
                     </tr>))
                     }

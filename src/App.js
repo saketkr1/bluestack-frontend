@@ -1,5 +1,5 @@
-import React, { Component, Suspense } from 'react';
-import { useTranslation, withTranslation, Trans } from 'react-i18next';
+import React, { Suspense } from 'react';
+import { useTranslation } from 'react-i18next';
 import logo from './logo.svg';
 import './App.css';
 
@@ -17,10 +17,11 @@ function Page() {
     <div>
       <CommonHeader />
       <div>
-        <button type="button" onClick={() => changeLanguage('de')}>
+        <p>Switch language</p>
+        <button variant="primary" onClick={() => changeLanguage('de')}>
           de
         </button>
-        <button type="button" onClick={() => changeLanguage('en')}>
+        <button variant="primary" onClick={() => changeLanguage('en')}>
           en
         </button>
       </div>

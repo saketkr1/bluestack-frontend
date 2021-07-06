@@ -4,7 +4,7 @@ export const jsonData = {
       {
         "name": "PUBG MOBILE 2",
         "region": "CH",
-        "createdOn": 1626502100756,
+        "createdOn": 1625529600000,
         "price": 120,
         "csv": "Some CSV link for PUBG MOBILE",
         "report": "Some report link for PUBG MOBILE",
